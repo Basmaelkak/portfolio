@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Basma</title>
+  <title>Portfolio - Basma EL-Kak</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">Basma</div>
+    <div class="logo">Basma EL-Kak</div>
     <ul class="nav-links">
       <li><a href="#about">À propos</a></li>
       <li><a href="#projects">Projets</a></li>
@@ -23,31 +23,69 @@
 
   <!-- Hero -->
   <header class="hero" data-aos="fade-down">
-    <h1>👋 Bonjour, je suis <span class="highlight">Basma EL-Kak</span></h1>
-    <p>Étudiante en Génie des Systèmes d'Information & Communication <br> Passionnée par l’IA, le web et les réseaux intelligents</p>
+    <div class="hero-content">
+      <h1>👋 Bonjour, je suis <span class="highlight">Basma EL-Kak</span></h1>
+      <p>Élève ingénieure en Génie des Systèmes d'Information & Communication</p>
+      <p>Passionnée par l’IA appliquée aux réseaux 🤖 et le développement full-stack 🌐. </p>
+      <div class="hero-links">
+        <a class="btn" href="#projects">Voir mes projets</a>
+        <a class="btn btn-secondary" href="#contact">Contactez-moi</a>
+      </div>
+    </div>
   </header>
 
   <!-- À propos -->
   <section id="about" class="section" data-aos="fade-up">
-    <h2>À propos</h2>
-    <p>Je suis une étudiante motivée, curieuse et impliquée dans mes projets académiques. Ce portfolio présente quelques-unes de mes réalisations en ingénierie logicielle, réseaux et IA.</p>
+    <h2>À propos de moi</h2>
+    <p>Je suis une étudiante motivée, curieuse et impliquée dans mes projets académiques. 
+    Ce portfolio présente mes réalisations en ingénierie logicielle, réseaux et IA.</p>
   </section>
 
   <!-- Projets -->
   <section id="projects" class="section projects" data-aos="fade-up">
     <h2>Mes Projets</h2>
-    <div class="project-card">
-      <h3>🔧 supervision des réseaux SDN par apprentissage automatique </h3>
-      <p>Un tableau de bord interactif pour visualiser en temps réel les métriques réseau depuis Mininet.</p>
-      <p><strong>Technos :</strong> SDN, isolation forest,javascript,python,html, CSS</p>
-      <a class="btn" href="https://github.com/Basmaelkak/SDN-Monitoring.git" target="_blank">Voir sur GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>📷 Création de Données Synthétiques pour les Systèmes de Surveillance des Conducteurs à
-l’aide de l’IA Générative</h3>
-      <p>Un outil pour générer automatiquement des images à partir de prompts textuels pour des datasets DMS.</p>
-      <p><strong>Technos :</strong>  IA générative,React.js,Python, PyTorch</p>
-      <a class="btn" href="https://github.com/Basmaelkak/PFA-GenData.git" target="_blank">Voir sur GitHub</a>
+    <div class="projects-grid">
+
+      <!-- Projet SDN -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>📈🧠 Supervision des réseaux SDN</h3>
+        <p>Dashboard pour monitorer un réseau SDN basé sur Faucet, Permet aux admins de détecter les anomalies réseau en temps réel</p>
+        <p><strong>Technos :</strong> SDN, Isolation Forest, JavaScript, Python, HTML, CSS, SQLite</p>
+        <a class="btn" href="https://github.com/Basmaelkak/SDN-Monitoring.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+
+      <!-- Projet IA Générative -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>📷 Génération de données synthétiques pour DMS</h3>
+        <p>Outil générant automatiquement des images à partir de prompts pour des datasets DMS (Drivers Monitoring System).</p>
+        <p><strong>Technos :</strong> IA générative, React.js, Python, PyTorch</p>
+        <a class="btn" href="https://github.com/Basmaelkak/PFA-GenData.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+
+      <!-- Projet Locations -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>🏠 Gestion des locations et biens immobiliers</h3>
+        <p>Gestion des biens (maisons, appartements) et des locations associées.</p>
+        <p><strong>Technos :</strong> Java, Thymeleaf, Spring Boot</p>
+        <a class="btn" href="https://github.com/Basmaelkak/Control.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+
+      <!-- Projet QuizAI -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>📝🤖 QuizAI - Quiz intelligent</h3>
+        <p>Application mobile de quiz utilisant l’IA pour générer et évaluer automatiquement les questions.</p>
+        <p><strong>Technos :</strong> Java, XML, Firebase, Android Studio</p>
+        <a class="btn" href="https://github.com/Basmaelkak/QuizAI.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+
+      <!-- Projet NetPerfAnalyser -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>📊 NetPerfAnalyser - Analyse de performance réseau</h3>
+        <p>Plateforme complète pour tester et visualiser les performances réseau en temps réel.</p>
+        <p><strong>Technos :</strong> Java, React.js, Spring Boot, MySQL, JavaScript</p>
+        <a class="btn" href="https://github.com/Basmaelkak/NetPerfAnalyser.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+
     </div>
   </section>
 
@@ -56,25 +94,57 @@ l’aide de l’IA Générative</h3>
     <h2>Compétences</h2>
     <ul class="skills-list">
       <li>🖥️ Java, Python, JavaScript</li>
-      <li>🌐 HTML, CSS, React</li>
-      <li>🔌 Réseaux, Mininet, SDN</li>
-      <li>🧠 IA, Flask, GitHub</li>
+      <li>🌐 HTML, CSS, React.js,SpringBoot</li>
+      <li>🔌 TCP/IP, OSPF,MPLS,BGP,Vlan,SDN</li>
+      <li>🧠 IA, Flask, Machine Learning</li>
     </ul>
   </section>
+  <!-- Certifications -->
+<section id="certifications" class="section" data-aos="fade-up">
+  <h2>🎓 Certifications</h2>
+  <div class="cert-grid">
+
+    <!-- Cisco -->
+    <div class="cert-card">
+      <img src="images/ui2.jpeg" alt="Cisco Cybersecurity Badge">
+      <p>Introduction to Cybersecurity – Cisco (2025)</p>
+    </div>
+
+    <!-- Networking Basics -->
+    <div class="cert-card">
+      <img src="images/ui.jpeg" alt="Networking Basics Badge">
+      <p>Networking Basics - Cisco (2024)</p>
+    </div>
+
+  </div>
+</section>
+
+
 
   <!-- Contact -->
-  <section id="contact" class="section" data-aos="fade-up">
+  <section id="contact" class="section contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>📧 kak.basma08@gmail.com</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/basma-el-kak-0aab62249/" target="_blank">Mon LinkedIn</a></p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <p><a href="mailto:kak.basma08@gmail.com">kak.basma08@gmail.com</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fab fa-linkedin"></i>
+        <p><a href="https://www.linkedin.com/in/basma-el-kak-0aab62249/" target="_blank">Mon LinkedIn</a></p>
+      </div>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Basma EL-Kak. Tous droits réservés.</p>
+    <p>© 2025 Basma EL-Kak - Portfolio</p>
   </footer>
-   
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
